@@ -74,6 +74,11 @@ body {
   animation: glowUp 5s ease-in-out;
   animation-iteration-count: infinite;
 }
+.animated .rotating-parent {
+  overflow: hidden;
+  border-radius: 0.1px;
+  transform: translateY(-53.5px);
+}
 .animated .rotating-animation {
   width: 1000px;
   min-height: 350px;
@@ -172,7 +177,9 @@ body {
   </svg>
 </div>
 <div class="animated">
-  <div class="rotating-animation"></div>
+  <div class="rotating-parent">
+    <div class="rotating-animation"> </div>
+  </div>
 </div>
   
   
